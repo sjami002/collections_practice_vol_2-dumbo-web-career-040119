@@ -22,3 +22,9 @@ def remove_non_strings(array)
     word.is_a?(String) == false
   end
 end
+
+def count_elements(array)
+  array.uniq.each {|word| i = 0
+  array.each {|word2| if word2 == word then i += 1 end}
+  word[:i] = i}
+end
