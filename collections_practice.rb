@@ -31,5 +31,8 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  keys[0].values.map.with_index {|v, i| data[i].merge(v)}
+  merged = []
+  keys.each {|i| data.first.map{|key, val|
+    if i.values[0] == k
+      then merged << i.merge(val)}}
 end
