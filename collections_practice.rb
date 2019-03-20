@@ -48,10 +48,3 @@ def organize_schools(schools)
   cities.each {|k, v| schools.each {|k1, v1| if k == v1[:location]
     then v << k1 end}}
 end
-
-# def organize_schools(schools)
-#     cities = {}
-#     schools.collect {|k,v| cities[v[:location]] = []}
-#     cities.each {|k,v| schools.each {|k1,v1| if k == v1[:location]
-#     then v << k1  end}}
-# end
