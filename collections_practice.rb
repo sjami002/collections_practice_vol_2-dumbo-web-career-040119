@@ -37,3 +37,7 @@ def merge_data(keys, data)
       then merged << i.merge(val)end}}
       merged
 end
+
+def find_cool(cool)
+  cool.select {|i| i.any? {|key, val| val == "cool"}}
+end
